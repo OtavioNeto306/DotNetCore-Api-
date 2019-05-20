@@ -1,0 +1,41 @@
+<form class="form-inline">
+  <div class="form-group mb-2">
+    <input type="text" class="form-control mr-2" placeholder="buscar"> 
+    <button class="btn btn-outline-success">buscar</button>
+  </div>
+</form>
+<table class="table table-striped">
+  <thead class="thead-dark">
+    <tr>
+      <th>#</th>
+      <th>Nome:</th>
+      <th>Email:</th>
+      <th>Senha</th>
+      <th>CPF</th>
+      <th>RG</th>
+      <th>Endereço</th>
+      <th>Rua</th>
+      <th>Nº</th>
+      <th>Telefone</th>
+      <th>Celular</th>
+      <th>Registro Ativo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let cadastro of cadastros">
+      <td></td>
+      <td>{{cadastro.nome}}</td>
+      <td>{{cadastro.email}}</td>
+      <td>{{cadastro.senha}}</td>
+      <td>{{cadastro.cpf}}</td>
+      <td>{{cadastro.rg}}</td>
+      <td>{{cadastro.endereco}}</td>
+      <td>{{cadastro.rua}}</td>
+      <td>{{cadastro.numero}}</td>
+      <td>{{cadastro.telefone}}</td>
+      <td>{{cadastro.celular}}</td>
+      <td>{{cadastro.registroAtivo}}</td>
+      
+    </tr>
+  </tbody>
+</table>
