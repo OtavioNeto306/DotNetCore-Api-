@@ -1,11 +1,12 @@
+import { Pessoa } from "./Pessoa";
 export interface Endereco {
 
-Id: number;
-Estado: string;
-Cidade: string;
-Bairro: string;
-Rua: string;
-Numero: string;
-PontoReferencia: string;
-PessoaId: number;
+id: number;
+estado: string;
+cidade: string;
+bairro: string;
+rua: string;
+numero: string;
+pontoReferencia: string;
+pessoaId: number;
 }
