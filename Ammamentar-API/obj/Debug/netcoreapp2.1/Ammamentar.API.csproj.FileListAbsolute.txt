@@ -26,3 +26,8 @@ C:\Users\Orlando Lemos\Desktop\DOTNETCORE.AMMAMENTAR\ammamentar-api\obj\Debug\ne
 C:\Users\Orlando Lemos\Desktop\DOTNETCORE.AMMAMENTAR\ammamentar-api\obj\Debug\netcoreapp2.1\Ammamentar.API.RazorTargetAssemblyInfo.cache
 C:\Users\Orlando Lemos\Desktop\DOTNETCORE.AMMAMENTAR\ammamentar-api\obj\Debug\netcoreapp2.1\Ammamentar.API.dll
 C:\Users\Orlando Lemos\Desktop\DOTNETCORE.AMMAMENTAR\ammamentar-api\obj\Debug\netcoreapp2.1\Ammamentar.API.pdb
+C:\Users\Orlando Lemos\Desktop\DOTNETCORE.AMMAMENTAR\ammamentar-api\bin\Debug\netcoreapp2.1\Ammamentar.Domain.dll
+C:\Users\Orlando Lemos\Desktop\DOTNETCORE.AMMAMENTAR\ammamentar-api\bin\Debug\netcoreapp2.1\Ammamentar.Repository.dll
+C:\Users\Orlando Lemos\Desktop\DOTNETCORE.AMMAMENTAR\ammamentar-api\bin\Debug\netcoreapp2.1\Ammamentar.Domain.pdb
+C:\Users\Orlando Lemos\Desktop\DOTNETCORE.AMMAMENTAR\ammamentar-api\bin\Debug\netcoreapp2.1\Ammamentar.Repository.pdb
+C:\Users\Orlando Lemos\Desktop\DOTNETCORE.AMMAMENTAR\ammamentar-api\obj\Debug\netcoreapp2.1\Ammamentar.API.csproj.CopyComplete

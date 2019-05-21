@@ -6,6 +6,11 @@
     <Folder Include="wwwroot\"/>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Ammamentar.Domain\Ammamentar.Domain.csproj" />
+        <ProjectReference Include="..\Ammamentar.Repository\Ammamentar.Repository.csproj" />
+
+  </ItemGroup>
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App"/>
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All"/>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="2.1.2"/>

@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Ammamentar.API.Model
+namespace Ammamentar.Domain
 {
     public class Pessoa
     {

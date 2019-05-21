@@ -1,13 +1,15 @@
-<form class="form-inline">
+<div class="form-inline">
   <div class="form-group mb-2">
-    <input type="text" class="form-control mr-2" placeholder="buscar"> 
-    <button class="btn btn-outline-success">buscar</button>
+    <label class="mr-2">Filtro:</label><input type="text" class="form-control mr-2"
+    placeholder="buscar"
+    [(ngModel)]="filtroLista"> 
   </div>
-</form>
+</div>
+<h3>Filtro: {{filtroLista}}</h3>
 <table class="table table-striped">
-  <thead class="thead-dark">
+  <thead class="thead-light">
     <tr>
-      <th>#</th>
+      <th>Codigo:</th>
       <th>Nome:</th>
       <th>Email:</th>
       <th>Senha</th>
@@ -19,12 +21,13 @@
       <th>Telefone</th>
       <th>Celular</th>
       <th>Registro Ativo</th>
+      <th>Ativo</th>
     </tr>
   </thead>
-  <tbody>
-    <tr *ngFor="let cadastro of cadastros">
-      <td></td>
-      <td>{{cadastro.nome}}</td>
+  <tbody *ngIf="cadastros && cadastros.length">
+    <tr *ngFor="let cadastro of cadastrosFiltrados">
+      <td>{{cadastro.pessoaId}}</td>
+      <td>{{cadastro.nome | uppercase}}</td>
       <td>{{cadastro.email}}</td>
       <td>{{cadastro.senha}}</td>
       <td>{{cadastro.cpf}}</td>
@@ -34,8 +37,23 @@
       <td>{{cadastro.numero}}</td>
       <td>{{cadastro.telefone}}</td>
       <td>{{cadastro.celular}}</td>
-      <td>{{cadastro.registroAtivo}}</td>
-      
+      <td>{{cadastro.registroAtivo}}" </td>
+      <td>
+        <button class="btn btn-success" *ngIf="cadastro.registroAtivo ==1"></button>
+        <button class="btn btn-danger" *ngIf="cadastro.registroAtivo ==0"></button>
+
+      </td>
     </tr>
   </tbody>
+  <tfoot *ngIf="!cadastros.length">
+    <tr> 
+      <td colspan="12" class="text-center">
+          <h4>
+              Nenhum Cadastro Encontrado!
+            </h4>
+      </td>
+      
+    </tr>
+  </tfoot>
 </table>
+

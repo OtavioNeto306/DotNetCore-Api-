@@ -4491,6 +4491,29 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
+      },
+      "Ammamentar.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Ammamentar.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Ammamentar.Domain.dll": {}
+        }
+      },
+      "Ammamentar.Repository/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Ammamentar.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Ammamentar.Repository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Ammamentar.Repository.dll": {}
+        }
       }
     }
   },
@@ -12124,10 +12147,22 @@
         "system.xml.xpath.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xdocument.nuspec"
       ]
+    },
+    "Ammamentar.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Ammamentar.Domain/Ammamentar.Domain.csproj",
+      "msbuildProject": "../Ammamentar.Domain/Ammamentar.Domain.csproj"
+    },
+    "Ammamentar.Repository/1.0.0": {
+      "type": "project",
+      "path": "../Ammamentar.Repository/Ammamentar.Repository.csproj",
+      "msbuildProject": "../Ammamentar.Repository/Ammamentar.Repository.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
+      "Ammamentar.Domain >= 1.0.0",
+      "Ammamentar.Repository >= 1.0.0",
       "Microsoft.AspNetCore.App >= 2.1.1",
       "Microsoft.AspNetCore.Http >= 2.1.1",
       "Microsoft.AspNetCore.Razor.Design >= 2.1.2",
@@ -12164,7 +12199,14 @@
       },
       "frameworks": {
         "netcoreapp2.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Orlando Lemos\\Desktop\\DOTNETCORE.AMMAMENTAR\\Ammamentar.Domain\\Ammamentar.Domain.csproj": {
+              "projectPath": "C:\\Users\\Orlando Lemos\\Desktop\\DOTNETCORE.AMMAMENTAR\\Ammamentar.Domain\\Ammamentar.Domain.csproj"
+            },
+            "C:\\Users\\Orlando Lemos\\Desktop\\DOTNETCORE.AMMAMENTAR\\Ammamentar.Repository\\Ammamentar.Repository.csproj": {
+              "projectPath": "C:\\Users\\Orlando Lemos\\Desktop\\DOTNETCORE.AMMAMENTAR\\Ammamentar.Repository\\Ammamentar.Repository.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

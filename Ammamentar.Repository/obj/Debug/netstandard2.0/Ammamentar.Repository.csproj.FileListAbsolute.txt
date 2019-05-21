@@ -1,0 +1,12 @@
+C:\Users\Orlando Lemos\Desktop\DOTNETCORE.AMMAMENTAR\Ammamentar.Repository\bin\Debug\netstandard2.0\Ammamentar.Repository.deps.json
+C:\Users\Orlando Lemos\Desktop\DOTNETCORE.AMMAMENTAR\Ammamentar.Repository\bin\Debug\netstandard2.0\Ammamentar.Repository.dll
+C:\Users\Orlando Lemos\Desktop\DOTNETCORE.AMMAMENTAR\Ammamentar.Repository\bin\Debug\netstandard2.0\Ammamentar.Repository.pdb
+C:\Users\Orlando Lemos\Desktop\DOTNETCORE.AMMAMENTAR\Ammamentar.Repository\bin\Debug\netstandard2.0\Ammamentar.Domain.dll
+C:\Users\Orlando Lemos\Desktop\DOTNETCORE.AMMAMENTAR\Ammamentar.Repository\bin\Debug\netstandard2.0\Ammamentar.Domain.pdb
+C:\Users\Orlando Lemos\Desktop\DOTNETCORE.AMMAMENTAR\Ammamentar.Repository\obj\Debug\netstandard2.0\Ammamentar.Repository.csprojAssemblyReference.cache
+C:\Users\Orlando Lemos\Desktop\DOTNETCORE.AMMAMENTAR\Ammamentar.Repository\obj\Debug\netstandard2.0\Ammamentar.Repository.csproj.CoreCompileInputs.cache
+C:\Users\Orlando Lemos\Desktop\DOTNETCORE.AMMAMENTAR\Ammamentar.Repository\obj\Debug\netstandard2.0\Ammamentar.Repository.AssemblyInfoInputs.cache
+C:\Users\Orlando Lemos\Desktop\DOTNETCORE.AMMAMENTAR\Ammamentar.Repository\obj\Debug\netstandard2.0\Ammamentar.Repository.AssemblyInfo.cs
+C:\Users\Orlando Lemos\Desktop\DOTNETCORE.AMMAMENTAR\Ammamentar.Repository\obj\Debug\netstandard2.0\Ammamentar.Repository.csproj.CopyComplete
+C:\Users\Orlando Lemos\Desktop\DOTNETCORE.AMMAMENTAR\Ammamentar.Repository\obj\Debug\netstandard2.0\Ammamentar.Repository.dll
+C:\Users\Orlando Lemos\Desktop\DOTNETCORE.AMMAMENTAR\Ammamentar.Repository\obj\Debug\netstandard2.0\Ammamentar.Repository.pdb

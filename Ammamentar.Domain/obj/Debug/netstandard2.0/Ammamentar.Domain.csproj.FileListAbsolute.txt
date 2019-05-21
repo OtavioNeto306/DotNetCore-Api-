@@ -1,0 +1,9 @@
+C:\Users\Orlando Lemos\Desktop\DOTNETCORE.AMMAMENTAR\Ammamentar.Domain\bin\Debug\netstandard2.0\Ammamentar.Domain.deps.json
+C:\Users\Orlando Lemos\Desktop\DOTNETCORE.AMMAMENTAR\Ammamentar.Domain\bin\Debug\netstandard2.0\Ammamentar.Domain.dll
+C:\Users\Orlando Lemos\Desktop\DOTNETCORE.AMMAMENTAR\Ammamentar.Domain\bin\Debug\netstandard2.0\Ammamentar.Domain.pdb
+C:\Users\Orlando Lemos\Desktop\DOTNETCORE.AMMAMENTAR\Ammamentar.Domain\obj\Debug\netstandard2.0\Ammamentar.Domain.csprojAssemblyReference.cache
+C:\Users\Orlando Lemos\Desktop\DOTNETCORE.AMMAMENTAR\Ammamentar.Domain\obj\Debug\netstandard2.0\Ammamentar.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Orlando Lemos\Desktop\DOTNETCORE.AMMAMENTAR\Ammamentar.Domain\obj\Debug\netstandard2.0\Ammamentar.Domain.AssemblyInfoInputs.cache
+C:\Users\Orlando Lemos\Desktop\DOTNETCORE.AMMAMENTAR\Ammamentar.Domain\obj\Debug\netstandard2.0\Ammamentar.Domain.AssemblyInfo.cs
+C:\Users\Orlando Lemos\Desktop\DOTNETCORE.AMMAMENTAR\Ammamentar.Domain\obj\Debug\netstandard2.0\Ammamentar.Domain.dll
+C:\Users\Orlando Lemos\Desktop\DOTNETCORE.AMMAMENTAR\Ammamentar.Domain\obj\Debug\netstandard2.0\Ammamentar.Domain.pdb

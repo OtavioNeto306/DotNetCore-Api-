@@ -24,6 +24,8 @@
     ".NETCoreApp,Version=v2.1": {
       "Ammamentar.API/1.0.0": {
         "dependencies": {
+          "Ammamentar.Domain": "1.0.0",
+          "Ammamentar.Repository": "1.0.0",
           "Microsoft.AspNetCore.App": "2.1.1",
           "Microsoft.AspNetCore.Http": "2.1.1",
           "Microsoft.AspNetCore.Razor.Design": "2.1.2",
@@ -461,6 +463,25 @@
           "System.Reflection.Extensions": "4.3.0",
           "System.Resources.ResourceManager": "4.3.0",
           "System.Runtime": "4.3.0"
+        }
+      },
+      "Ammamentar.Domain/1.0.0": {
+        "runtime": {
+          "Ammamentar.Domain.dll": {}
+        },
+        "compile": {
+          "Ammamentar.Domain.dll": {}
+        }
+      },
+      "Ammamentar.Repository/1.0.0": {
+        "dependencies": {
+          "Ammamentar.Domain": "1.0.0"
+        },
+        "runtime": {
+          "Ammamentar.Repository.dll": {}
+        },
+        "compile": {
+          "Ammamentar.Repository.dll": {}
         }
       },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
@@ -3505,6 +3526,16 @@
       "sha512": "sha512-Yn/WfYe9RoRfmSLvUt2JerP0BTGGykCZkQPgojaxgzF2N0oPo+/AhB8TXOpdCcNlrG3VRtsamtK2uzsp3cqRVw==",
       "path": "system.linq.queryable/4.0.1",
       "hashPath": "system.linq.queryable.4.0.1.nupkg.sha512"
+    },
+    "Ammamentar.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Ammamentar.Repository/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Microsoft.AspNet.WebApi.Client/5.2.6": {
       "type": "package",
