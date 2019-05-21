@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Ammamentar.API.Data;
-using Ammamentar.API.Model;
+﻿using System.Threading.Tasks;
 
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
-using Ammamentar.API.Map;
+using Ammamentar.Repository;
 
 namespace Ammamentar.API.Controllers
 {
@@ -16,8 +11,8 @@ namespace Ammamentar.API.Controllers
     [ApiController]
     public class ValuesController : ControllerBase
     {
-        public readonly ApplicationContext _context;
-        public ValuesController(ApplicationContext context)
+        public readonly AmmamentarContext _context;
+        public ValuesController(AmmamentarContext context)
         {
             _context = context;
 
@@ -51,7 +46,7 @@ namespace Ammamentar.API.Controllers
             try
             {
                 
-                var results = await _context.Pessoas.FirstOrDefaultAsync(x => x.PessoaId == id); // A cada Chamada sera Criada uma instancia
+                var results = await _context.Pessoas.FirstOrDefaultAsync(x => x.Id == id); // A cada Chamada sera Criada uma instancia
                                                                     // E a cada chamada vai ter uma (await)Espera
                                                                     // Melhorar para não travar o recurso, com muitos dados
                 return Ok(results);

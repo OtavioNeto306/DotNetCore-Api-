@@ -1,20 +1,20 @@
+using System;
 using System.Collections.Generic;
 
 namespace Ammamentar.Domain
 {
     public class Pessoa
     {
-        public int PessoaId { get; set; }
-        public string nome { get; set; }
-        public string email { get; set; }
-        public string senha { get; set; }
-        public string cpf { get; set; }
-        public string rg { get; set; }
-        public string endereco { get; set; }
-        public string rua { get; set; }
-        public string numero { get; set; }
-        public string telefone { get; set; }
-        public string celular { get; set; }
-        public int registroAtivo { get; set; }
+        public int Id { get; set; }
+        public string Nome { get; set; }
+        public string Email { get; set; }
+        public string Senha { get; set; }
+        public string Cpf { get; set; }
+        public string Rg { get; set; }
+        public string Telefone { get; set; }
+        public string Celular { get; set; }
+        public int RegistroAtivo { get; set; }
+        public DateTime DataCadastro { get; set; }
+        public List<Endereco> Enderecos { get; set; }
     }
 }

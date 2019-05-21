@@ -4506,7 +4506,9 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Ammamentar.Domain": "1.0.0"
+          "Ammamentar.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "2.1.2",
+          "Microsoft.EntityFrameworkCore.Sqlite": "2.1.2"
         },
         "compile": {
           "bin/placeholder/Ammamentar.Repository.dll": {}
@@ -12177,11 +12179,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Orlando Lemos\\Desktop\\DOTNETCORE.AMMAMENTAR\\ammamentar-api\\Ammamentar.API.csproj",
+      "projectUniqueName": "C:\\Users\\Orlando Lemos\\Desktop\\DOTNETCORE.AMMAMENTAR\\Ammamentar-API\\Ammamentar.API.csproj",
       "projectName": "Ammamentar.API",
-      "projectPath": "C:\\Users\\Orlando Lemos\\Desktop\\DOTNETCORE.AMMAMENTAR\\ammamentar-api\\Ammamentar.API.csproj",
+      "projectPath": "C:\\Users\\Orlando Lemos\\Desktop\\DOTNETCORE.AMMAMENTAR\\Ammamentar-API\\Ammamentar.API.csproj",
       "packagesPath": "C:\\Users\\Orlando Lemos\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Orlando Lemos\\Desktop\\DOTNETCORE.AMMAMENTAR\\ammamentar-api\\obj\\",
+      "outputPath": "C:\\Users\\Orlando Lemos\\Desktop\\DOTNETCORE.AMMAMENTAR\\Ammamentar-API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

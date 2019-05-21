@@ -475,7 +475,9 @@
       },
       "Ammamentar.Repository/1.0.0": {
         "dependencies": {
-          "Ammamentar.Domain": "1.0.0"
+          "Ammamentar.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "2.1.2",
+          "Microsoft.EntityFrameworkCore.Sqlite": "2.1.2"
         },
         "runtime": {
           "Ammamentar.Repository.dll": {}
