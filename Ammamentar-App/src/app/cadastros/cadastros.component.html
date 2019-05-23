@@ -20,24 +20,28 @@
       <th>Nº</th>
       <th>Telefone</th>
       <th>Celular</th>
-      <th>Registro Ativo</th>
+      <th>Data do Registro</th>
+      
       <th>Ativo</th>
     </tr>
   </thead>
   <tbody *ngIf="cadastros && cadastros.length">
     <tr *ngFor="let cadastro of cadastrosFiltrados">
-      <td>{{cadastro.pessoaId}}</td>
+      <td>{{cadastro.id}}</td>
       <td>{{cadastro.nome | uppercase}}</td>
       <td>{{cadastro.email}}</td>
       <td>{{cadastro.senha}}</td>
       <td>{{cadastro.cpf}}</td>
       <td>{{cadastro.rg}}</td>
-      <td>{{cadastro.endereco}}</td>
-      <td>{{cadastro.rua}}</td>
-      <td>{{cadastro.numero}}</td>
+      <td>{{cadastro.enderecos[0].bairro | uppercase}}</td>
+      <td>{{cadastro.enderecos[0].rua | uppercase}}</td>
+      <td>{{cadastro.enderecos[0].numero | uppercase}}</td>
       <td>{{cadastro.telefone}}</td>
       <td>{{cadastro.celular}}</td>
-      <td>{{cadastro.registroAtivo}}" </td>
+      <td>{{cadastro.dataCadastro | DateTimeFormatPipe}}</td>
+
+
+      
       <td>
         <button class="btn btn-success" *ngIf="cadastro.registroAtivo ==1"></button>
         <button class="btn btn-danger" *ngIf="cadastro.registroAtivo ==0"></button>

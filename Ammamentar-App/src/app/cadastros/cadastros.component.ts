@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { CadastroService } from '../_services/cadastro.service';
+import { Pessoa } from '../_models/Pessoa';
 
 @Component({
   selector: 'app-cadastros',
@@ -8,7 +9,8 @@ import { HttpClient } from '@angular/common/http';
 })
 export class CadastrosComponent implements OnInit {
 
-  cadastros: any = [];
+  cadastrosFiltrados: Pessoa[];
+  cadastros: Pessoa[] = [];
   _filtroLista: string;
   get filtroLista(): string{
     return this._filtroLista;
@@ -19,9 +21,8 @@ export class CadastrosComponent implements OnInit {
       this.cadastrosFiltrados = this.filtroLista ? this.filtraCadastros(this.filtroLista) :this.cadastros;
   }
 
-  cadastrosFiltrados: any = [];
 
-  constructor(private http: HttpClient) { }
+  constructor(private cadastroService: CadastroService) { }
 
   // vai ser chamado antes do metodo ser execultado
   ngOnInit() {
@@ -29,7 +30,7 @@ export class CadastrosComponent implements OnInit {
 
   }
 
-  filtraCadastros(filtrarPor: string): any {
+  filtraCadastros(filtrarPor: string): Pessoa[] {
     filtrarPor = filtrarPor.toLocaleLowerCase();
     return this.cadastros.filter(
       cadastro => cadastro.nome.toLocaleLowerCase().indexOf(filtrarPor) !== - 1
@@ -38,9 +39,10 @@ export class CadastrosComponent implements OnInit {
 
   // Fazendo uma chamada get na Api Web
   getCadastros(){
-    this.http.get('http://localhost:5000/api/values').subscribe(response  => {
-        this.cadastros = response;
-        console.log(response);
+    this.cadastroService.getAllCadastro().subscribe(
+      (_cadastros: Pessoa[])  => {
+        this.cadastros = _cadastros;
+        console.log(_cadastros);
       }, error => {
         console.log(error);
       }

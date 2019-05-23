@@ -10,6 +10,8 @@ import { CadastroDetalheComponent } from './cadastro-detalhe/cadastro-detalhe.co
 import { CadastroNovoComponent } from './cadastro-novo/cadastro-novo.component';
 import { CadastroEditarComponent } from './cadastro-editar/cadastro-editar.component';
 import { Route } from '@angular/compiler/src/core';
+import { DateTimeFormatPipePipe } from './_helps/DateTimeFormatPipe.pipe';
+import { CadastroService } from './_services/cadastro.service';
 
 
 
@@ -20,14 +22,17 @@ import { Route } from '@angular/compiler/src/core';
       NavComponent,
       CadastroDetalheComponent,
       CadastroNovoComponent,
-      CadastroEditarComponent
+      CadastroEditarComponent,
+      DateTimeFormatPipePipe
    ],
    imports: [
       BrowserModule,
       HttpClientModule,
       FormsModule
    ],
-   providers: [],
+   providers: [
+      CadastroService
+   ],
    bootstrap: [
       AppComponent
    ]
