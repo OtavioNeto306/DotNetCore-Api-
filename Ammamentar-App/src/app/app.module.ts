@@ -2,6 +2,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { TooltipModule, BsDropdownModule, ModalModule } from 'ngx-bootstrap';
+
+import { CadastroService } from './_services/cadastro.service';
 
 import { AppComponent } from './app.component';
 import { CadastrosComponent } from './cadastros/cadastros.component';
@@ -10,9 +13,8 @@ import { CadastroDetalheComponent } from './cadastro-detalhe/cadastro-detalhe.co
 import { CadastroNovoComponent } from './cadastro-novo/cadastro-novo.component';
 import { CadastroEditarComponent } from './cadastro-editar/cadastro-editar.component';
 import { Route } from '@angular/compiler/src/core';
-import { DateTimeFormatPipePipe } from './_helps/DateTimeFormatPipe.pipe';
-import { CadastroService } from './_services/cadastro.service';
 
+import { DateTimeFormatPipePipe } from './_helps/DateTimeFormatPipe.pipe';
 
 
 @NgModule({
@@ -27,6 +29,9 @@ import { CadastroService } from './_services/cadastro.service';
    ],
    imports: [
       BrowserModule,
+      BsDropdownModule.forRoot(),
+      TooltipModule.forRoot(),
+      ModalModule.forRoot(),
       HttpClientModule,
       FormsModule
    ],
