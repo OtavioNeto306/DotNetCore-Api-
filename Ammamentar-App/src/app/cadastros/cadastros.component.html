@@ -21,8 +21,8 @@
       <th>Telefone</th>
       <th>Celular</th>
       <th>Data do Registro</th>
-      
-      <th>Ativo</th>
+      <th>Ativos</th>
+      <th>Opções</th>
     </tr>
   </thead>
   <tbody *ngIf="cadastros && cadastros.length">
@@ -39,25 +39,137 @@
       <td>{{cadastro.telefone}}</td>
       <td>{{cadastro.celular}}</td>
       <td>{{cadastro.dataCadastro | DateTimeFormatPipe}}</td>
-
-
-      
       <td>
-        <button class="btn btn-success" *ngIf="cadastro.registroAtivo ==1"></button>
-        <button class="btn btn-danger" *ngIf="cadastro.registroAtivo ==0"></button>
+        <button class="btn btn-success" *ngIf="cadastro.registroAtivo ==1" tooltip="Ativo"></button>
+        <button class="btn btn-danger" *ngIf="cadastro.registroAtivo ==0" tooltip="Não Ativo"></button>
       </td>
+      <td>
+        
+        <button class="btn btn-sm btn-primary" 
+        tooltip="Editar" (click)="openModal(template)">
+        <i class="fa fa-edit"></i>
+      </button>
+      <button class="btn btn-sm btn-danger" tooltip="Excluir">
+        <i class="fa fa-eraser"></i>
+      </button>
       
-    </tr>
-  </tbody>
-  <tfoot *ngIf="!cadastros.length">
-    <tr> 
-      <td colspan="12" class="text-center">
-          <h4>
-              Nenhum Cadastro Encontrado!
-            </h4>
-      </td>
-      
-    </tr>
-  </tfoot>
+    </td>
+    
+  </tr>
+</tbody>
+<tfoot *ngIf="!cadastros.length">
+  <tr> 
+    <td colspan="12" class="text-center">
+      <h4>
+        Nenhum Cadastro Encontrado!
+      </h4>
+    </td>
+    
+  </tr>
+</tfoot>
 </table>
 
+
+<div bsModal #template="bs-modal" class="modal fade" tabindex="-1"
+     role="dialog" aria-labelledby="dialog-sizes-name1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 id="dialog-sizes-name1" class="modal-title pull-left">Large modal</h4>
+        <button type="button" class="close pull-right" (click)="template.hide()" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer"></div>
+    </div>
+  </div>
+</div>
+ 
+ 
+  
+<div>
+<form [formGroup]="registerForm">
+  <div class="form-row">
+    <div class="form-group col-md-12">
+      <label>Nome</label>
+      <input type="text" class="form-control"
+       formControlName="nome" placeholder="Insira o Nome Completo da Doadora">
+      <div  class="is-invalid-feedback">
+        O Nome Completo é Obrigatorio
+      </div>
+    </div>
+  </div>  
+  <div class="form-row">
+    <div class="form-group col-md-8">
+      <label>Email</label>
+      <input type="text" class="form-control "formControlName="email" placeholder="Digite o Email">
+      <div  
+      class="invalid-feedback">
+        O Email é Obrigatorio
+      </div>
+    </div>
+    <div class="form-group col-md-4">
+      <label>Senha</label>
+      <input type="text" class="form-control "formControlName="senha" placeholder="Digite a senha">
+      
+    </div>
+  </div>  
+  <div class="form-row">
+    <div class="form-group col-md-3">
+      <label>CFP</label>
+      <input type="text" class="form-control "formControlName="cpf" placeholder="Digite seu CPF">
+      
+    </div>
+    <div class="form-group col-md-5">
+      <label>RG</label>
+      <input type="text" class="form-control "formControlName="rg" placeholder="Digite seu RG">
+      
+    </div>
+  </div>  
+  <div class="form-row">
+    <div class="form-group col-md-4">
+      <label>Endereco</label>
+      <input type="text" class="form-control "formControlName="endereco" placeholder="Digite seu Endereço">
+      
+    </div>
+    <div class="form-group col-md-8">
+      <label>Rua</label>
+      <input type="text" class="form-control "formControlName="rua" placeholder="Digite o nome da Rua">
+      
+    </div>
+    <div class="form-group col-md-1">
+      <label>Nº</label>
+      <input type="text" class="form-control "formControlName="dataCadastro" placeholder="Digite o nuero da residencia">
+    </div>
+    <div class="form-group col-md-5">
+      <label>Telefone</label>
+      <input type="text" class="form-control "formControlName="telefone" placeholder="Digite seu telefone">
+    </div>
+    <div class="form-group col-md-8">
+      <label>Celular</label>
+      <input type="text" class="form-control "formControlName="celular" placeholder="Digite seu numero de Celular">
+    </div>
+    <div class="form-group col-md-8">
+      <label>Data do Registro</label>
+      <input type="date" class="form-control"
+      BsDatepicker
+      formControlName="dataCadastro" placeholder="Digite a data do cadastro">
+    </div>
+  </div> 
+</form>
+</div>
+<br>
+<button class="btn btn-secondary" (click)="openModal(template)">
+  Fechar
+</button>
+<button class="btn btn-primary" [disabled]="!registerForm.valid" (click)="salvarAlteracao()">
+  Salvar Alterações
+</button>
+<br>
+<br>
+
+<p>Form Value: {{registerForm.value | json}}</p>
+<p>Form Statu: {{registerForm.status | json}}</p>

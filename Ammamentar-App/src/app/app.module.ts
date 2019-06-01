@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TooltipModule, BsDropdownModule, ModalModule } from 'ngx-bootstrap';
 
 import { CadastroService } from './_services/cadastro.service';
@@ -13,6 +13,7 @@ import { CadastroDetalheComponent } from './cadastro-detalhe/cadastro-detalhe.co
 import { CadastroNovoComponent } from './cadastro-novo/cadastro-novo.component';
 import { CadastroEditarComponent } from './cadastro-editar/cadastro-editar.component';
 import { Route } from '@angular/compiler/src/core';
+import { BsDatepickerModule } from 'ngx-bootstrap';
 
 import { DateTimeFormatPipePipe } from './_helps/DateTimeFormatPipe.pipe';
 
@@ -32,8 +33,10 @@ import { DateTimeFormatPipePipe } from './_helps/DateTimeFormatPipe.pipe';
       BsDropdownModule.forRoot(),
       TooltipModule.forRoot(),
       ModalModule.forRoot(),
+      BsDatepickerModule.forRoot(),
       HttpClientModule,
-      FormsModule
+      FormsModule,
+      ReactiveFormsModule
    ],
    providers: [
       CadastroService
